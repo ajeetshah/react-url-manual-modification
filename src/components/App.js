@@ -15,16 +15,16 @@ function App() {
       <ToastContainer autoClose={3000} hideProgressBar />
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/Athletes" exact component={Athletes} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Athletes" component={Athletes} />
         <Route
-          path="/Athletes/:id/AthleteSessions"
           exact
+          path="/Athletes/:id/AthleteSessions"
           component={AthleteSessions}
         />
         <Route
-          path="/Athletes/:athleteId/AthleteSessions/:athleteSessionId/TrainingSession"
           exact
+          path="/Athletes/:athleteId/AthleteSessions/:athleteSessionId/TrainingSession"
           component={AthleteTrainingSession}
         />
       </Switch>
