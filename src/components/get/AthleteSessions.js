@@ -472,15 +472,8 @@ class AthleteSessions extends Component {
                     className="col-2"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
@@ -490,15 +483,8 @@ class AthleteSessions extends Component {
                     className="col-2"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
@@ -508,15 +494,8 @@ class AthleteSessions extends Component {
                     className="col-2"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
@@ -526,15 +505,8 @@ class AthleteSessions extends Component {
                     className="col-1"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
@@ -546,15 +518,8 @@ class AthleteSessions extends Component {
                     className="col-1"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
@@ -566,15 +531,8 @@ class AthleteSessions extends Component {
                     className="col-1"
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
-                      let path = athSess.AthleteSessionId + "/TrainingSession";
-                      let matchedURL = this.props.match.url;
-                      if (matchedURL.slice(-1) === "/") {
-                        path = matchedURL + path;
-                      } else {
-                        path = matchedURL + "/" + path;
-                      }
                       this.props.history.push({
-                        pathname: path,
+                        pathname: `/Athletes/${this.props.match.params?.id}/AthleteSessions/${athSess.AthleteSessionId}/TrainingSession`,
                       });
                     }}
                   >
