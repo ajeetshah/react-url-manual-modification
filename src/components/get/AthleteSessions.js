@@ -475,7 +475,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });
@@ -489,7 +489,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });
@@ -503,7 +503,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });
@@ -517,7 +517,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });
@@ -533,7 +533,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });
@@ -549,7 +549,7 @@ class AthleteSessions extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname: makePaths.AthleteTrainingSession(
-                          this.props.match.url,
+                          this.props.match.params?.id,
                           athSess.AthleteSessionId
                         ),
                       });

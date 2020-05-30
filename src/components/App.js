@@ -20,11 +20,8 @@ export const makePaths = {
   AthleteSessions: (id) => {
     return `/Athletes/${id}/AthleteSessions`;
   },
-  AthleteTrainingSession: (currentPath, athleteSessionId) => {
-    if (String(currentPath).slice(-1) === "/") { // Has trailing slash
-      return `${currentPath}${athleteSessionId}/TrainingSession`;
-    }
-    return `${currentPath}/${athleteSessionId}/TrainingSession`;
+  AthleteTrainingSession: (athleteId, athleteSessionId) => {
+    return `/Athletes/${athleteId}/AthleteSessions/${athleteSessionId}/TrainingSession`;
   },
 };
 
