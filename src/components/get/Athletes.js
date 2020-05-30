@@ -110,7 +110,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                   >
@@ -121,7 +121,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                     className="col-1"
@@ -133,7 +133,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                     className="col-1"
@@ -145,7 +145,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                     className="col-2"
@@ -157,7 +157,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                     className="col-2"
@@ -173,7 +173,7 @@ class Athletes extends Component {
                     onClick={() => {
                       this.props.history.push({
                         pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                          "/Athletes/" + ath.AthleteId + "/AthleteSessions/",
                       });
                     }}
                     className="col-2"
