@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Table, Button, ButtonToolbar } from "react-bootstrap";
 import { CommentsModal } from "./Modal/CommentsModal";
 import Moment from "react-moment";
+import { makePaths } from "../App";
 
 //#region STATIC FIELDS
 let passedAthleteId = 0;
@@ -473,8 +474,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >
@@ -485,8 +488,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >
@@ -497,8 +502,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >
@@ -509,8 +516,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >
@@ -523,8 +532,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >
@@ -537,8 +548,10 @@ class AthleteSessions extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          athSess.AthleteSessionId + "/TrainingSession/",
+                        pathname: makePaths.AthleteTrainingSession(
+                          this.props.match.url,
+                          athSess.AthleteSessionId
+                        ),
                       });
                     }}
                   >

@@ -9,6 +9,25 @@ import Athletes from "./get/Athletes";
 import AthleteSessions from "./get/AthleteSessions";
 import AthleteTrainingSession from "./get/AthleteTrainingSession";
 
+export const paths = {
+  Athletes: "/Athletes",
+  AthleteSessions: "/Athletes/:id/AthleteSessions",
+  AthleteTrainingSession:
+    "/Athletes/:athleteId/AthleteSessions/:athleteSessionId/TrainingSession",
+};
+
+export const makePaths = {
+  AthleteSessions: (id) => {
+    return `/Athletes/${id}/AthleteSessions`;
+  },
+  AthleteTrainingSession: (currentPath, athleteSessionId) => {
+    if (String(currentPath).slice(-1) === "/") { // Has trailing slash
+      return `${currentPath}${athleteSessionId}/TrainingSession`;
+    }
+    return `${currentPath}/${athleteSessionId}/TrainingSession`;
+  },
+};
+
 function App() {
   return (
     <div className="container-fluid">
@@ -16,15 +35,11 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Athletes" component={Athletes} />
+        <Route exact path={paths.Athletes} component={Athletes} />
+        <Route exact path={paths.AthleteSessions} component={AthleteSessions} />
         <Route
           exact
-          path="/Athletes/:id/AthleteSessions"
-          component={AthleteSessions}
-        />
-        <Route
-          exact
-          path="/Athletes/:athleteId/AthleteSessions/:athleteSessionId/TrainingSession"
+          path={paths.AthleteTrainingSession}
           component={AthleteTrainingSession}
         />
       </Switch>

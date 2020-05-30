@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Table, Button, ButtonToolbar } from "react-bootstrap";
 import Moment from "react-moment";
+import { makePaths } from "../App";
 
 //#region STATIC FIELDS
 const athletesJSON = [
@@ -109,8 +110,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                   >
@@ -120,8 +120,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                     className="col-1"
@@ -132,8 +131,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                     className="col-1"
@@ -144,8 +142,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                     className="col-2"
@@ -156,8 +153,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                     className="col-2"
@@ -172,8 +168,7 @@ class Athletes extends Component {
                     onMouseEnter={this.cursorHand}
                     onClick={() => {
                       this.props.history.push({
-                        pathname:
-                          "Athletes/" + ath.AthleteId + "/AthleteSessions/",
+                        pathname: makePaths.AthleteSessions(ath.AthleteId),
                       });
                     }}
                     className="col-2"
